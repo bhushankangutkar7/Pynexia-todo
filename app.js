@@ -15,10 +15,6 @@ app.use(express.urlencoded({
   extended: true,
 }));
 
-app.get('/', (req, res) => {
-  return res.send("Hello World");
-});
-
 app.use('/todos', todoRouter);
 
 app.use(globalErrorHandler);
